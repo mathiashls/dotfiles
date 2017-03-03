@@ -1,1 +1,3 @@
-# dotfiles
+# Dotfiles
+
+Mathias Hillesheim's dotfiles.

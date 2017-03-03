@@ -13,6 +13,7 @@ call vundle#begin()
     Plugin 'chriskempson/base16-vim'
     Plugin 'w0rp/ale'
     Plugin 'scrooloose/syntastic'
+    Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 

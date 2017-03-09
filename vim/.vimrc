@@ -37,6 +37,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+set colorcolumn=80
 
 " ycm: disabling preview window
 let g:ycm_add_preview_to_completeopt = 0

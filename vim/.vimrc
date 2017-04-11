@@ -45,8 +45,6 @@ set completeopt-=preview
 
 " Color
 let base16colorspace=256
-set background=dark
-colorscheme base16-monokai
 source ~/.vimrc_background
 
 

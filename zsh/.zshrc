@@ -4,3 +4,11 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 export EDITOR="vim"
 export LC_ALL="en_US.UTF-8"
 export TERM=xterm-256color
+alias vim='nvim'
+
+# oh my zsh stuff
+export ZSH=/Users/mathias/.oh-my-zsh
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="cloud"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh

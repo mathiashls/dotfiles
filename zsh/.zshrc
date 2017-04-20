@@ -10,4 +10,8 @@ export LANG="en_US"
 export C_CTYPE="en_US"
 export PATH="/home/mathias/.config/panel:/usr/local/bin:/usr/local/sbin:/home/mathias/st-0.7:$PATH"
 export TERM=xterm-256color
-export QSYS_ROOTDIR="/home/mathias/altera_lite/16.0/quartus/sopc_builder/bin"
+
+export ZSH=/home/mathias/.oh-my-zsh
+ZSH_THEME="steeef"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh

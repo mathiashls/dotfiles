@@ -1,3 +1,2 @@
-exec panel &
-xset +fp /home/mathias/fonts/tewi-font/out &
+sxhkd &
 exec bspwm

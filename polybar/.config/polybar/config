@@ -1,8 +1,8 @@
 [bar/top]
-width = 99%
-height = 35 
+width = 99.5%
+height = 25 
 offset-x = 7
-offset-y = 3 
+offset-y = 5 
 ;bottom = true
 
 background = #5a000000
@@ -17,13 +17,13 @@ padding-right = 0
 module-margin-left = 0 
 module-margin-right = 0
 
-font-0 = Noto Sans:pixelsize=9;0
-font-1 = FontAwesome:size=8;-2
-font-2 = siji:pixelsize=8;0
+font-0 = Noto Sans:pixelsize=7;2.5
+font-1 = FontAwesome:size=8;2.5
+font-2 = siji:pixelsize=8;2.5
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = battery volume mpd date powermenu
+modules-right = battery volume date powermenu
 
 ;tray-position = right
 ;tray-padding = 2
@@ -189,41 +189,3 @@ menu-1-0-padding = 3
 menu-2-0 = power off?  
 menu-2-0-exec = sudo poweroff
 menu-2-0-padding = 3
-
-[module/mpd]
-type = internal/mpd
-
-host = 127.0.0.1
-port = 6600
-password = 
-
-; Seconds to sleep between progressbar/song timer sync
-; Default: 1
-interval = 2
-
-; Available tags:
-;   <label-song> (default)
-;   <label-time>
-;   <bar-progress>
-;   <toggle> - gets replaced with <icon-(pause|play)>
-;   <toggle-stop> - gets replaced with <icon-(stop|play)>
-;   <icon-random>
-;   <icon-repeat>
-;   <icon-repeatone>
-;   <icon-prev>
-;   <icon-stop>
-;   <icon-play>
-;   <icon-pause>
-;   <icon-next>
-;   <icon-seekb>
-;   <icon-seekf>
-format-online =    <label-song>
-
-; Available tokens:
-;   %artist%
-;   %album%
-;   %date%
-;   %title%
-; Default: %artist% - %title%
-label-song = %title%
-format-online-padding = 3

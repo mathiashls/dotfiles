@@ -10,6 +10,7 @@ call vundle#begin()
     Plugin 'yggdroot/indentline'
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
+    Plugin 'edkolev/tmuxline.vim'
     Plugin 'chriskempson/base16-vim'
     Plugin 'w0rp/ale'
     function! DoRemote(arg)
@@ -42,8 +43,10 @@ call matchadd('ColorColumn', '\%81v', 100)
 let base16colorspace=256
 source ~/.vimrc_background
 
-
 " Airline stuff
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
+
+" tmux powerline
+let g:tmuxline_powerline_separators = 0

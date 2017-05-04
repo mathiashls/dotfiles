@@ -7,11 +7,19 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'yggdroot/indentline'
+
+    " Useful shit
+    Plugin 'mhinz/vim-startify'
+
+    " Fancy shit
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'edkolev/tmuxline.vim'
     Plugin 'chriskempson/base16-vim'
+
+    " Coding shit
+    Plugin 'sheerun/vim-polyglot'
+    Plugin 'yggdroot/indentline'
     Plugin 'w0rp/ale'
     function! DoRemote(arg)
         UpdateRemotePlugins

@@ -1,8 +1,8 @@
 [bar/top]
-width = 99.5%
-height = 25 
-offset-x = 7
-offset-y = 5 
+width = 99%
+height = 33 
+offset-x = 8
+offset-y = 8 
 ;bottom = true
 
 background = #5a000000
@@ -25,9 +25,10 @@ modules-left = bspwm xwindow
 modules-center = 
 modules-right = battery volume date powermenu
 
-;tray-position = right
-;tray-padding = 2
-;tray-background = #66333333
+tray-transparent = true
+tray-position = right
+tray-padding = 2
+tray-background = #66333333
 
 wm-restack = bspwm
 

@@ -9,6 +9,6 @@ alias vim='nvim'
 # oh my zsh stuff
 export ZSH=/Users/mathias/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="cloud"
+ZSH_THEME="steeef"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh

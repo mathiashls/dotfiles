@@ -7,11 +7,20 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'yggdroot/indentline'
+
+    " useful stuff
+    Plugin 'mhinz/vim-startify'
+
+    " cosmetic stuff
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'chriskempson/base16-vim'
+    Plugin 'edkolev/tmuxline.vim'
+
+    " coding stuff
+    Plugin 'yggdroot/indentline'
     Plugin 'w0rp/ale'
+    Plugin 'sheerun/vim-polyglot'
     function! DoRemote(arg)
         UpdateRemotePlugins
     endfunction
@@ -26,6 +35,12 @@ filetype plugin indent on
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#source#jedi#show_docstrings = 1
 autocmd CompleteDone * pclose
+
+" Key mapping
+noremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Vim stuff
 syntax on
@@ -44,8 +59,10 @@ set background=dark
 colorscheme base16-monokai
 source ~/.vimrc_background
 
-
 " Airline stuff
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
+
+" Tmux powerline
+let g:tmuxline_powerline_separators = 0

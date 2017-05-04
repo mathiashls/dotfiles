@@ -1,8 +1,8 @@
 #! /bin/sh
 
-bspc monitor -d code web music whatever
+bspc monitor -d term web code music another 
 
-bspc config border_width                4
+bspc config border_width                6
 bspc config window_gap                  10
 bspc config focus_follows_pointer       true
 bspc config remove_unplugged_monitors   true
@@ -17,5 +17,5 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-feh --bg-scale ~/Images/Wallpapers/2.jpg
+feh --bg-scale ~/Images/Wallpapers/5.jpg
 polybar top &

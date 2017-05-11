@@ -21,6 +21,7 @@ call vundle#begin()
     Plugin 'sheerun/vim-polyglot'
     Plugin 'yggdroot/indentline'
     Plugin 'w0rp/ale'
+    Plugin 'tpope/vim-fugitive'
     function! DoRemote(arg)
         UpdateRemotePlugins
     endfunction
@@ -35,6 +36,17 @@ filetype plugin indent on
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#source#jedi#show_docstrings = 1
 autocmd CompleteDone * pclose
+
+" Key mapping
+" >> vim like arrows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+" >> fugitive keys
+nmap <leader>gs :Gstatus<CR>
+
+
 
 " Vim stuff
 syntax on

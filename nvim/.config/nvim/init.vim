@@ -18,6 +18,7 @@ call vundle#begin()
     Plugin 'edkolev/tmuxline.vim'
 
     " coding stuff
+    Plugin 'junegunn/fzf'
     Plugin 'airblade/vim-gitgutter'
     Plugin 'tpope/vim-fugitive'
     Plugin 'yggdroot/indentline'

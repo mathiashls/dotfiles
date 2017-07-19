@@ -5,6 +5,8 @@ export EDITOR="vim"
 export LC_ALL="en_US.UTF-8"
 export TERM=xterm-256color
 alias vim='nvim'
+alias v='nvim'
+alias la='ls -la'
 
 # oh my zsh stuff
 export ZSH=/Users/mathias/.oh-my-zsh

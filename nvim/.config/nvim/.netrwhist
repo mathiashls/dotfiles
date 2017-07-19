@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/mathias/Documents/BYNE/smartptt_web_client/Scripts'
+let g:netrw_dirhist_2='/Users/mathias/Documents/BYNE/lab/paleale-tipro-setup'
+let g:netrw_dirhist_3='/Users/mathias/Documents/BYNE/lab/paleale-tipro-setup/utils'
+let g:netrw_dirhist_4='/Users/mathias/Documents/BYNE/lab/paleale-tipro-setup/pychangeme'
+let g:netrw_dirhist_5='/Users/mathias/Documents/BYNE/lab/paleale-tipro-setup/utils'
+let g:netrw_dirhist_6='/Users/mathias/Documents/BYNE/lab/smartptt/pysmartptt'
+let g:netrw_dirhist_7='/Users/mathias/Documents/BYNE/lab/smartptt/pysmartptt/lib'
+let g:netrw_dirhist_8='/Users/mathias/Documents/BYNE/lab/smartptt/pysmartptt'
+let g:netrw_dirhist_9='/Users/mathias/dotfiles/nvim/.config'

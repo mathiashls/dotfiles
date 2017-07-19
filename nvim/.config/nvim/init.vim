@@ -18,6 +18,8 @@ call vundle#begin()
     Plugin 'edkolev/tmuxline.vim'
 
     " coding stuff
+    Plugin 'airblade/vim-gitgutter'
+    Plugin 'tpope/vim-fugitive'
     Plugin 'yggdroot/indentline'
     Plugin 'w0rp/ale'
     Plugin 'sheerun/vim-polyglot'
@@ -37,10 +39,14 @@ let g:deoplete#source#jedi#show_docstrings = 1
 autocmd CompleteDone * pclose
 
 " Key mapping
-noremap <C-h> <C-w>h
+" -> vim arrows on differente files inside vim
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" -> figutive keys
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gd :Gdiff<CR>
 
 " Vim stuff
 syntax on

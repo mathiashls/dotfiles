@@ -4,9 +4,12 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 export EDITOR="vim"
 export LC_ALL="en_US.UTF-8"
 export TERM=xterm-256color
+export PATH=/usr/local/bin:/Users/mathias/.scripts:$PATH
 alias vim='nvim'
 alias v='nvim'
 alias la='ls -la'
+alias byne='connect_console.sh'
+alias bynedir='cd /Users/mathias/Documents/BYNE/'
 
 # oh my zsh stuff
 export ZSH=/Users/mathias/.oh-my-zsh

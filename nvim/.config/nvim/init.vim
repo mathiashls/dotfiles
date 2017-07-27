@@ -59,6 +59,7 @@ set number
 set colorcolumn=80
 highlight ColorColumn ctermbg=red
 call matchadd('ColorColumn', '\%81v', 100)
+set clipboard=unnamed
 
 " Color
 let base16colorspace=256

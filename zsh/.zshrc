@@ -9,7 +9,8 @@ alias vim='nvim'
 alias v='nvim'
 alias la='ls -la'
 alias byne='connect_console.sh'
-alias bynedir='cd /Users/mathias/Documents/BYNE/'
+alias codir='cd /Users/mathias/Documents/code/'
+alias bdir='cd /Users/mathias/Documents/code/BYNE'
 
 # oh my zsh stuff
 export ZSH=/Users/mathias/.oh-my-zsh

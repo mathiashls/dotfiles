@@ -10,6 +10,7 @@ export LANG="en_US"
 export C_CTYPE="en_US"
 export PATH="/home/mathias/.config/panel:/usr/local/bin:/usr/local/sbin:/home/mathias/st-0.7:$PATH"
 export TERM=xterm-256color
+alias codir='cd /home/mathias/Documents/coding/'
 
 export ZSH=/home/mathias/.oh-my-zsh
 ZSH_THEME="steeef"

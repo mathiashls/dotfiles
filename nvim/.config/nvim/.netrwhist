@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/mathias/dotfiles/wm/.config/bspwm'
-let g:netrw_dirhist_2='/home/mathias/dotfiles'
-let g:netrw_dirhist_3='/home/mathias/dotfiles/nvim'
-let g:netrw_dirhist_4='/home/mathias/dotfiles/nvim/.config'
-let g:netrw_dirhist_5='/home/mathias/dotfiles/nvim/.config/nvim'
-let g:netrw_dirhist_6='/home/mathias/Documents/byne/lab/paleale-tipro-setup/pychangeme_app'
-let g:netrw_dirhist_7='/home/mathias/Documents/byne/lab/paleale-tipro-setup/models'

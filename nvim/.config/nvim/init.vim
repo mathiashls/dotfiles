@@ -18,6 +18,7 @@ call vundle#begin()
     Plugin 'chriskempson/base16-vim'
 
     " Coding shit
+    Plugin 'airblade/vim-gitgutter'
     Plugin 'sheerun/vim-polyglot'
     Plugin 'yggdroot/indentline'
     Plugin 'w0rp/ale'
@@ -29,6 +30,8 @@ call vundle#begin()
     Plugin 'zchee/deoplete-jedi', { 'for': 'python' }
 
 call vundle#end()
+
+set clipboard=unnamed
 
 filetype plugin indent on
 
@@ -61,12 +64,14 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 " Color
 let base16colorspace=256
+set background=dark
 source ~/.vimrc_background
 
 " Airline stuff
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
+let g:gitgutter_highlight_lines = 1
 
 " tmux powerline
 let g:tmuxline_powerline_separators = 0

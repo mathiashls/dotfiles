@@ -1,3 +1,4 @@
-[[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc &
+setxkbmap -option ctrl:nocaps
+compton &
 sxhkd &
 exec bspwm

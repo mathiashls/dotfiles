@@ -17,5 +17,5 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-feh --bg-scale ~/Images/Wallpapers/5.jpg
+feh --bg-scale ~/Images/ES1.jpg
 polybar top &

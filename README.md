@@ -1,15 +1,8 @@
 # Dotfiles
 
-Mathias Hillesheim's dotfiles.
+Mathias Hillesheim's dotfiles for configuring the `MacBook Pro 13`.
 
-## What to do on mac:
-
-Turn off your mac.
-Get a Thinkpad with linux.
-
-## What to do if you have to stay on mac:
-
-### Install:
+## Install:
 
 * Homebrew
 * Stow
@@ -17,5 +10,3 @@ Get a Thinkpad with linux.
 * Tmux
 * tmuxline
 * base16-shell
-
-I probably forgot something, but I'm writing to myself in the future so what's the point? Good luck searching what is missing to get this dotfile running, mate. Please, dude from the future, add here the things I can't remember in the present.

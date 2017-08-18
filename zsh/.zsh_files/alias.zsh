@@ -13,5 +13,5 @@ alias paleale='. ~/.scripts/paleale_virtualenv.sh'
 # Programs:
 alias vim='nvim'
 alias v='nvim'
-alias la='ls -la'
+alias la='ls -lAhG'
 alias byne='connect_console.sh'

@@ -2,36 +2,41 @@ set encoding=utf-8
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-    Plugin 'gmarik/Vundle.vim'
+
+    "Plug 'gmarik/Vundle.vim'
 
     " useful stuff
-    Plugin 'mhinz/vim-startify'
+    Plug 'mhinz/vim-startify'
 
     " cosmetic stuff
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
-    Plugin 'chriskempson/base16-vim'
-    Plugin 'edkolev/tmuxline.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'chriskempson/base16-vim'
+    Plug 'edkolev/tmuxline.vim'
 
     " coding stuff
-    Plugin 'junegunn/fzf'
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'tpope/vim-fugitive'
-    Plugin 'yggdroot/indentline'
-    Plugin 'w0rp/ale'
-    Plugin 'sheerun/vim-polyglot'
+    Plug 'junegunn/fzf'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
+    Plug 'yggdroot/indentline'
+    Plug 'w0rp/ale'
+    Plug 'sheerun/vim-polyglot'
     function! DoRemote(arg)
-        UpdateRemotePlugins
+        UpdateRemotePlugs
     endfunction
-    Plugin 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-    Plugin 'zchee/deoplete-jedi', { 'for': 'python' }
-    Plugin 'zchee/deoplete-clang'
+    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+    Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+    Plug 'zchee/deoplete-clang'
 
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 

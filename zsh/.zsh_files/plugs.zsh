@@ -17,8 +17,8 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 zplug "chriskempson/base16-shell", as:plugin, use:base16-shell.plugin.zsh
 
-zplug "sindresorhus/pure" # branch and enviroment
-# zplug "yardnsm/blox-zsh-theme" # branch and commit
+# zplug "sindresorhus/pure" # branch and enviroment
+zplug "yardnsm/blox-zsh-theme" # branch and commit
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then

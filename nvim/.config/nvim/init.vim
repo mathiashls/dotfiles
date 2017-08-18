@@ -29,6 +29,7 @@ call vundle#begin()
     endfunction
     Plugin 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
     Plugin 'zchee/deoplete-jedi', { 'for': 'python' }
+    Plugin 'zchee/deoplete-clang'
 
 call vundle#end()
 
@@ -72,6 +73,10 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
 let g:gitgutter_highlight_lines = 1
+
+" Clang shit
+let g:deoplete#sources#clang#libclang_path='/usr/local/Cellar/llvm/4.0.1/lib/libclang.dylib'
+let g:deoplete#sources#clang#clang_header='/usr/local/Cellar/llvm/4.0.1/lib/clang'
 
 " Tmux powerline
 let g:tmuxline_powerline_separators = 0

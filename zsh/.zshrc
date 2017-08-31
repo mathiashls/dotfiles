@@ -8,3 +8,5 @@ source ~/.zsh_files/plugs.zsh
 source ~/.zsh_files/export.zsh
 
 source ~/.zsh_files/completion.zsh
+
+source ~/.zsh_files/setopt.zsh

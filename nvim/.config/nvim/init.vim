@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'w0rp/ale'
     Plug 'sheerun/vim-polyglot'
     function! DoRemote(arg)
-        UpdateRemotePlugs
+        UpdateRemotePlugins
     endfunction
     Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
@@ -77,7 +77,7 @@ source ~/.vimrc_background
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
-let g:gitgutter_highlight_lines = 1
+" let g:gitgutter_highlight_lines = 1
 
 " Clang shit
 let g:deoplete#sources#clang#libclang_path='/usr/local/Cellar/llvm/4.0.1/lib/libclang.dylib'

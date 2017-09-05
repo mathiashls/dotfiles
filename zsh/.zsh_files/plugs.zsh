@@ -1,29 +1,15 @@
-if [[ ! -d ~/.zplug ]];then
-    git clone https://github.com/b4b4r07/zplug ~/.zplug
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
 fi
 
-source ~/.zplug/init.zsh
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="avit"
 
-zplug "mafredri/zsh-async"
-zplug "zsh-users/zsh-completions"
-zplug "tj/git-extras", as:plugin, use:"etc/*.zsh"
-zplug "sapegin/shipit", as:command, use:bin/shipit
-zplug "unixorn/git-extra-commands"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "chriskempson/base16-shell", as:plugin, use:base16-shell.plugin.zsh
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/mathias/.oh-my-zsh
 
-# Themes:
-zplug "sindresorhus/pure" # branch and enviroment
-# zplug "yardnsm/blox-zsh-theme" # branch and commit
+plugins=(gitfast)
 
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-# Then, source plugins and add commands to $PATH
-zplug load #--verbose
+source $ZSH/oh-my-zsh.sh

@@ -23,7 +23,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'edkolev/tmuxline.vim'
 
     " coding stuff
-    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+    Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'yggdroot/indentline'
@@ -85,3 +86,9 @@ let g:deoplete#sources#clang#clang_header='/usr/local/Cellar/llvm/4.0.1/lib/clan
 
 " Tmux powerline
 let g:tmuxline_powerline_separators = 0
+
+" fzf config
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }

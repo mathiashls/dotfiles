@@ -52,9 +52,15 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
 " -> figutive keys
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gd :Gdiff<CR>
+noremap <leader>gb :Gblame<CR>
+
+" FZF keys
+nmap <leader>ff :Files<CR>
+nmap <leader>fg :Ag<space>
 
 " Vim stuff
 syntax on

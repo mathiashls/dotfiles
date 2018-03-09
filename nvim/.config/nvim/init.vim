@@ -2,33 +2,31 @@ set encoding=utf-8
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin('~/.config/nvim/plugged')
 
-call vundle#begin()
-
-    Plugin 'gmarik/Vundle.vim'
+    Plug 'gmarik/Vundle.vim'
 
     " Useful shit
-    Plugin 'mhinz/vim-startify'
+    Plug 'mhinz/vim-startify'
 
     " Fancy shit
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
-    Plugin 'edkolev/tmuxline.vim'
-    Plugin 'chriskempson/base16-vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'edkolev/tmuxline.vim'
+    Plug 'chriskempson/base16-vim'
 
     " Coding shit
-    Plugin 'sheerun/vim-polyglot'
-    Plugin 'yggdroot/indentline'
-    Plugin 'w0rp/ale'
-    Plugin 'tpope/vim-fugitive'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'yggdroot/indentline'
+    Plug 'w0rp/ale'
+    Plug 'tpope/vim-fugitive'
     function! DoRemote(arg)
         UpdateRemotePlugins
     endfunction
-    Plugin 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-    Plugin 'zchee/deoplete-jedi', { 'for': 'python' }
+    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+    Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on
 

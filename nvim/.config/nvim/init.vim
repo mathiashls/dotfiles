@@ -20,11 +20,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
     Plug 'tpope/vim-fugitive'
-    function! DoRemote(arg)
-        UpdateRemotePlugins
-    endfunction
-    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-    Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 
 call plug#end()
 

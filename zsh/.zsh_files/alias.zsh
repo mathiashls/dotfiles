@@ -1,9 +1,7 @@
 # Directories:
-alias bdir='cd /Users/mathias/Documents/BYNE'
-alias ste='cd /Users/mathias/Documents/IFSC/8FASE/STE'
-alias ste='cd /Users/mathias/Documents/IFSC/8FASE/PTC'
 alias .files='cd ~/dotfiles'
-alias paleale='workon paleale'
+alias paleale='$HOME/byne/code/paleale-server'
+alias bdir='$HOME/byne/'
 
 # Programs:
 alias vim='nvim'

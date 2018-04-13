@@ -10,6 +10,9 @@ export TERM=xterm-256color
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper_lazy.sh
+
 export ZSH=/home/mathias/.oh-my-zsh
 ZSH_THEME="steeef"
 plugins=(git)

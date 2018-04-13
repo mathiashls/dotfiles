@@ -16,6 +16,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'chriskempson/base16-vim'
 
     " Coding shit
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+    Plug 'junegunn/fzf.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
@@ -39,7 +41,9 @@ nnoremap <C-l> <C-w>l
 " >> fugitive keys
 nmap <leader>gs :Gstatus<CR>
 
-
+" FZF keys
+nmap <leader>ff :Files<CR>
+nmap <leader>fg :Ag<space>
 
 " Vim stuff
 syntax on
@@ -51,6 +55,7 @@ set number
 set colorcolumn=80
 highlight ColorColumn ctermbg=red
 call matchadd('ColorColumn', '\%81v', 100)
+set clipboard=unnamedplus
 
 " Color
 let base16colorspace=256

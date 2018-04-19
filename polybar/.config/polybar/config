@@ -16,14 +16,12 @@ alert = #bd2c40
 fixed-center = true
 
 font-0 = lucy tewi;1
-font-1 = Font Awesome 5 Free:size=6;1
-font-2 = Font Awesome 5 Brands:size=6;1
-font-3 = siji:pixelsize=8;0
+font-1 = FontAwesome:size=8;1
+font-2 = Wuncon Siji:pixelsize=8;0
 
 modules-left = i3
 modules-center = date
-;modules-right = wireless-network cpu memory battery
-modules-right = battery
+modules-right = wireless-network cpu memory battery
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -95,7 +93,7 @@ type = internal/battery
 full-at = 100
 
 battery = BAT0
-adapter = ACAD
+adapter = AC0
 
 poll-interval = 5
 
@@ -125,7 +123,7 @@ animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-framerate = 500
+animation-charging-framerate = 750
 
 
 [module/backlight]

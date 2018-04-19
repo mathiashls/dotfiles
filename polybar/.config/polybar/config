@@ -16,12 +16,12 @@ alert = #bd2c40
 fixed-center = true
 
 font-0 = lucy tewi;1
-font-1 = FontAwesome:size=8;1
+font-1 = FontAwesome:size=8;2
 font-2 = Wuncon Siji:pixelsize=8;0
 
 modules-left = i3
 modules-center = date
-modules-right = wireless-network cpu memory battery
+modules-right = wireless-network battery volume
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -151,3 +151,19 @@ label-connected =  %essid%
 label-connected-font = 1
 
 label-disconnected =   None
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <label-volume>
+format-muted = <label-muted>
+label-volume = %percentage%
+label-muted =  muted
+label-muted-foreground = #aaa
+format-volume-padding = 2
+format-muted-padding = 2
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-headphones-0 = 

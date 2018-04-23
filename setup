@@ -1,0 +1,15 @@
+#!/bin/sh
+
+HOSTNAME=$(hostname)
+
+if [ -d $HOSTNAME ]; then
+    CFG_FOLDERS=`ls $HOSTNAME`
+    echo "Installing dotfiles for $HOSTNAME"
+    for FOLDER in $CFG_FOLDERS
+    do
+        echo "[+] $FOLDER"
+        stow $FOLDER -d $HOSTNAME -t $HOME
+    done
+else
+    echo "It seems that is no configuration for your host ($HOSTNAME)."
+fi

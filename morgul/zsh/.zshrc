@@ -9,6 +9,7 @@ export PATH="/home/mathias/:/usr/local/bin:/usr/local/sbin:/home/mathias/st:$PAT
 export TERM=xterm-256color
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
+export GITHUB_ACCESS_TOKEN=$(cat $HOME/.private/github.token)
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper_lazy.sh

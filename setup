@@ -8,7 +8,7 @@ if [ -d $HOSTNAME ]; then
     for FOLDER in $CFG_FOLDERS
     do
         echo "[+] $FOLDER"
-        stow $FOLDER -d $HOSTNAME -t $HOME
+        stow $FOLDER -d $HOSTNAME -t $HOME --restow
     done
 else
     echo "It seems that is no configuration for your host ($HOSTNAME)."

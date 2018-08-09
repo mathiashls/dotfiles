@@ -26,6 +26,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-commentary'
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
     Plug 'sheerun/vim-polyglot'
@@ -48,6 +49,11 @@ nnoremap <C-l> <C-w>l
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gd :Gdiff<CR>
 noremap <leader>gb :Gblame<CR>
+
+" GitGutter Settings
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
 
 " FZF keys
 nmap <leader>ff :Files<CR>
@@ -75,9 +81,7 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
 
-" Clang shit
-let g:deoplete#sources#clang#libclang_path='/usr/local/Cellar/llvm/4.0.1/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header='/usr/local/Cellar/llvm/4.0.1/lib/clang'
+let g:gitgutter_highlight_lines = 1
 
 " Tmux powerline
 let g:tmuxline_powerline_separators = 0

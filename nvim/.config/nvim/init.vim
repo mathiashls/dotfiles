@@ -10,7 +10,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-
     "Plug 'gmarik/Vundle.vim'
 
     " useful stuff
@@ -33,18 +32,10 @@ call plug#begin('~/.vim/plugged')
     function! DoRemote(arg)
         UpdateRemotePlugins
     endfunction
-    Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-    Plug 'zchee/deoplete-jedi', { 'for': 'python' }
-    Plug 'zchee/deoplete-clang'
 
 call plug#end()
 
 filetype plugin indent on
-
-" Deoplete Settings
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#source#jedi#show_docstrings = 1
-autocmd CompleteDone * pclose
 
 " Key mapping
 " -> vim arrows on differente files inside vim
@@ -83,7 +74,6 @@ source ~/.vimrc_background
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
-" let g:gitgutter_highlight_lines = 1
 
 " Clang shit
 let g:deoplete#sources#clang#libclang_path='/usr/local/Cellar/llvm/4.0.1/lib/libclang.dylib'

@@ -1,3 +1,3 @@
-export WALLPAPER=$(find /usr/share/wallpapers/brown -type f | shuf -n1)
+export WALLPAPER=$(find /home/mathias/wallpapers -type f | shuf -n1)
 feh --bg-scale $WALLPAPER
 exec i3

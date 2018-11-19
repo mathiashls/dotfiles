@@ -1,15 +1,15 @@
 #!/bin/sh
 
-HOSTNAME=$(hostname)
+SYSTEM=$(uname -s)
 
-if [ -d $HOSTNAME ]; then
-    CFG_FOLDERS=`ls $HOSTNAME`
-    echo "Installing dotfiles for $HOSTNAME"
+if [ -d $SYSTEM ]; then
+    CFG_FOLDERS=`ls $SYSTEM`
+    echo "Installing dotfiles for $SYSTEM system"
     for FOLDER in $CFG_FOLDERS
     do
         echo "[+] $FOLDER"
-        stow $FOLDER -d $HOSTNAME -t $HOME --restow
+        stow --restow $FOLDER -d $SYSTEM -t $HOME
     done
 else
-    echo "It seems that is no configuration for your host ($HOSTNAME)."
+    echo "It seems that is no configuration for your $HOSTNAME system."
 fi

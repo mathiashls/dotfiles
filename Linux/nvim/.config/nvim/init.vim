@@ -3,18 +3,15 @@ set nocompatible
 filetype off
 
 call plug#begin('~/.config/nvim/plugged')
-
     Plug 'gmarik/Vundle.vim'
-
     " Useful shit
     Plug 'mhinz/vim-startify'
-
+    Plug 'airblade/vim-gitgutter'
     " Fancy shit
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'edkolev/tmuxline.vim'
     Plug 'chriskempson/base16-vim'
-
     " Coding shit
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
     Plug 'junegunn/fzf.vim'
@@ -22,7 +19,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
     Plug 'tpope/vim-fugitive'
-
 call plug#end()
 
 filetype plugin indent on
@@ -32,13 +28,13 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#source#jedi#show_docstrings = 1
 autocmd CompleteDone * pclose
 
-" Key mapping
-" >> vim like arrows
+" vim like arrows
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-" >> fugitive keys
+
+" fugitive keys
 nmap <leader>gs :Gstatus<CR>
 
 " FZF keys

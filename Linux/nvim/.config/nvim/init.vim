@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-commentary'
 call plug#end()
 
 filetype plugin indent on

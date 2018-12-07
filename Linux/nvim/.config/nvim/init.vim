@@ -35,14 +35,21 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" fugitive keys
-nmap <leader>gs :Gstatus<CR>
+"  fugitive keys
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gd :Gdiff<CR>
+noremap <leader>gb :Gblame<CR>
 
-" FZF keys
+" gitGutter Settings
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+" fzf keys
 nmap <leader>ff :Files<CR>
 nmap <leader>fg :Ag<space>
 
-" Vim stuff
+" vim stuff
 syntax on
 set softtabstop=4
 set tabstop=4
@@ -66,3 +73,9 @@ let g:airline_theme='base16'
 
 " tmux powerline
 let g:tmuxline_powerline_separators = 0
+
+" fzf config
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }

@@ -1,8 +1,12 @@
 #!/usr/bin/env sh
 # Inspired by davidarrieta
 
-CONNECTED_MONITOR=$(xrandr | grep " connected " | awk '{print$1}')
-export CONNECTED_MONITOR
 killall -q polybar
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar top &
+
+if type "xrandr"; then
+  for m in $(polybar --list-monitors | cut -d":" -f1); do
+    MONITOR=$m polybar --reload top &
+  done
+else
+  polybar --reload top &
+fi

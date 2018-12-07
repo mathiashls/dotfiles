@@ -9,7 +9,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-    Plug 'gmarik/Vundle.vim'
     " Useful shit
     Plug 'mhinz/vim-startify'
     Plug 'airblade/vim-gitgutter'

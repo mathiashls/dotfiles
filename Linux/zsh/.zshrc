@@ -4,7 +4,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias vim='nvim'
 alias v='nvim'
 export EDITOR="nvim"
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 export LD_LIBRARY_PATH="/usr/local/lib"
 export PATH="/home/mathias/:/usr/local/bin:/usr/local/sbin:/home/mathias/ubin:/home/mathias/st:$PATH"
 export TERM=xterm-256color

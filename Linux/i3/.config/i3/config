@@ -148,6 +148,31 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+# Audio Controls
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute @DEFAULT_SINK@ false; \
+    pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym Control+0 exec "pactl set-sink-mute @DEFAULT_SINK@ false; \
+    pactl set-sink-volume @DEFAULT_SINK@ +5%"
+
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute @DEFAULT_SINK@ false; \
+    pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym Control+9 exec "pactl set-sink-mute @DEFAULT_SINK@ false; \
+    pactl set-sink-volume @DEFAULT_SINK@ -5%"
+
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym Control+8 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym Control+7 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Mac like screenshot binds
+bindsym Control+Shift+3 exec scrot
+bindsym --release Control+Shift+4 exec scrot -s
+
 bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border

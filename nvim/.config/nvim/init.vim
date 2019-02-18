@@ -30,6 +30,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'yggdroot/indentline'
     Plug 'w0rp/ale'
     Plug 'sheerun/vim-polyglot'
+    Plug 'scrooloose/nerdcommenter'
+    Plug 'rking/ag.vim'
+
     function! DoRemote(arg)
         UpdateRemotePlugins
     endfunction

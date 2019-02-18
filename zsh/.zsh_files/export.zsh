@@ -1,7 +1,7 @@
 export EDITOR="nvim"
 export LC_ALL="en_US.UTF-8"
 export TERM=xterm-256color
-export PATH=/usr/local/bin:/Users/mathias/Documents/scripts:$PATH
+export PATH=/usr/local/bin:/Users/mathias/code/scripts:$PATH
 export BYNEPATH=/Users/mathias/Documents/code/BYNE
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7

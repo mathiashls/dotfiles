@@ -57,6 +57,8 @@ noremap <leader>gb :Gblame<CR>
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterUndoHunk
 nmap <Leader>hv <Plug>GitGutterPreviewHunk
+nmap <Leader>hn <Plug>GitGutterNextHunk
+nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " FZF keys
 nmap <leader>ff :Files<CR>

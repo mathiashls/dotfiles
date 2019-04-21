@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Useful shit
     Plug 'mhinz/vim-startify'
     Plug 'airblade/vim-gitgutter'
+    Plug 'scrooloose/nerdcommenter'
     " Fancy shit
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'

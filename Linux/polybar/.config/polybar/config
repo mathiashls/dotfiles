@@ -14,9 +14,10 @@ alert = #EA51B2
 
 fixed-center = true
 
-font-0 = lucy tewi;1
-font-1 = Wuncon Siji:pixelsize=8;0 
-font-2 = FontAwesome:size=8;2
+font-0 = Hack-Regular:pixelsize=7;2
+/*font-0 = lucy tewi fw;1*/
+font-1 = Wuncon Siji:pixelsize=8;0
+font-2 = FontAwesome:size=8;1
 modules-left = i3
 modules-center = date
 modules-right = wired-network wireless-network battery alsa

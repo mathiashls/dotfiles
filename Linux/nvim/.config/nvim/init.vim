@@ -47,9 +47,9 @@ noremap <leader>gd :Gdiff<CR>
 noremap <leader>gb :Gblame<CR>
 
 " gitGutter Settings
-nmap <Leader>ha <Plug>GitGutterStageHunk
-nmap <Leader>hu <Plug>GitGutterUndoHunk
-nmap <Leader>hv <Plug>GitGutterPreviewHunk
+nmap <Leader>ha <Plug>(GitGutterStageHunk)
+nmap <Leader>hu <Plug>(GitGutterUndoHunk)
+nmap <Leader>hv <Plug>(GitGutterPreviewHunk)
 
 " fzf keys
 nmap <leader>ff :Files<CR>

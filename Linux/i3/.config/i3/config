@@ -175,6 +175,35 @@ bindsym --release Control+Shift+4 exec scrot -s
 
 bindsym $mod+r mode "resize"
 
+# set primary gruvbox colorscheme colors
+set $bg #1d1f21
+set $bg-alt #414549
+set $fg #c5c8c6
+set $red #cc342b
+set $green #198844
+set $yellow #fba922
+set $blue #3971ed
+set $purple #a36ac7
+set $aqua #689d68
+set $gray #c5c8c6
+set $darkgray #1d2021
+set $orange #f96a38
+
+bar {
+    position top
+    status_command i3blocks
+
+    colors {
+        # bar background color
+        background $bg
+        statusline $fg
+        focused_workspace    $blue $blue $darkgray
+        inactive_workspace   $bg-alt $bg-alt $fg
+        active_workspace     $bg-alt $bg-alt $fg
+        urgent_workspace     $red $red $bg
+    }
+}
+
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
@@ -183,5 +212,3 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
-
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh

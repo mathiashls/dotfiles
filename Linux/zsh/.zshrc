@@ -3,6 +3,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 alias vim='nvim'
 alias v='nvim'
+alias sshadd='eval `ssh-agent -s` && ssh-add'
 export EDITOR="nvim"
 export LD_LIBRARY_PATH="/usr/local/lib"
 export PATH="$HOME:/usr/local/bin:/usr/local/sbin:$HOME/ubin:$HOME/st:$HOME/byne/scripts:$PATH"

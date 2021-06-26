@@ -8,9 +8,10 @@ I have one folder containing all the configuration for each PC or Notebook I use
 
 | Hostname/config | Machine       |
 |-----------------|---------------|
-| morgul          | Desktop       |
-| moria           | Thinkpad x230 |
+| moria           | Desktop       |
 | tirith          | Macbook       |
+
+## Linux
 
 Requirements:
 
@@ -22,4 +23,18 @@ Requirements:
 * vim-plug: https://github.com/junegunn/vim-plug
 * Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
 * base16_shell: https://github.com/chriskempson/base16-shell
-* st: git://git.suckless.org/st
+
+## Darwin
+
+Requirements:
+
+* iTerm2: https://iterm2.com/
+* Homebrew: https://brew.sh/index_pt-br
+* Zsh (Homebrew)
+* Stow (Homebrew)
+* Tmux (Homebrew)
+* Neovim (Homebrew)
+* Oh My Zsh: https://github.com/robbyrussell/oh-my-zsh
+* vim-plug: https://github.com/junegunn/vim-plug
+* Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
+* base16_shell: https://github.com/chriskempson/base16-shell

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SYSTEM=$(uname -s)
+SYSTEM=$(uname)
 
 if [ -d $SYSTEM ]; then
     CFG_FOLDERS=`ls $SYSTEM`

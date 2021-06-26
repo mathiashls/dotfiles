@@ -11,11 +11,13 @@ export TERM=xterm-256color
 export LC_ALL="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="steeef"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+export PATH="/usr/local/opt/node@14/bin:$PATH"

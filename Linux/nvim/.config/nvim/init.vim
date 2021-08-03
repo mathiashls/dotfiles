@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'edkolev/tmuxline.vim'
     Plug 'chriskempson/base16-vim'
     " Coding shit
+    Plug 'lifepillar/vim-solarized8' "theme solarized8 https://github.com/lifepillar/vim-solarized8.git
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
     Plug 'junegunn/fzf.vim'
     Plug 'sheerun/vim-polyglot'
@@ -70,7 +71,7 @@ set noswapfile
 
 " Color
 let base16colorspace=256
-colorscheme base16-dracula
+colorscheme solarized8
 
 " Airline stuff
 set laststatus=2

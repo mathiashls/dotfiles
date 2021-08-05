@@ -16,10 +16,10 @@ call plug#begin('~/.config/nvim/plugged')
     " Fancy shit
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'edkolev/tmuxline.vim'
     Plug 'chriskempson/base16-vim'
-    " Coding shit
     Plug 'lifepillar/vim-solarized8' "theme solarized8 https://github.com/lifepillar/vim-solarized8.git
+    " Coding shit
+    Plug 'sbdchd/neoformat'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
     Plug 'junegunn/fzf.vim'
     Plug 'sheerun/vim-polyglot'
@@ -51,6 +51,8 @@ noremap <leader>gb :Gblame<CR>
 nmap <Leader>ha <Plug>(GitGutterStageHunk)
 nmap <Leader>hu <Plug>(GitGutterUndoHunk)
 nmap <Leader>hv <Plug>(GitGutterPreviewHunk)
+nmap <Leader>hn <Plug>(GitGutterNextHunk)
+nmap <Leader>hp <Plug>(GitGutterPrevtHunk)
 
 " fzf keys
 nmap <leader>ff :Files<CR>

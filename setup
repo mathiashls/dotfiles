@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DARWIN_FILES="nvim tmux zsh"
+DARWIN_FILES="nvim tmux zsh alacritty"
 LINUX_FILES="nvim tmux zsh alacritty i3 xinitrc"
 
 SYSTEM=$(uname)

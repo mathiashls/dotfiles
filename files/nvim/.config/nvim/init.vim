@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'yggdroot/indentline'
-    Plug 'w0rp/ale'
+    Plug 'dense-analysis/ale'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-commentary'
 call plug#end()

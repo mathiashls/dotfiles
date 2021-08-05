@@ -1,15 +1,26 @@
 #!/bin/sh
 
-SYSTEM=$(uname)
+DARWIN_FILES="nvim tmux zsh"
+LINUX_FILES="nvim tmux zsh alacritty i3 xinitrc"
 
-if [ -d $SYSTEM ]; then
-    CFG_FOLDERS=`ls $SYSTEM`
+SYSTEM=$(uname)
+FILES_FOLDER="files"
+
+if [ -d $FILES_FOLDER ]; then
+
     echo "Installing dotfiles for $SYSTEM system"
-    for FOLDER in $CFG_FOLDERS
-    do
+    if [ $SYSTEM == "Darwin" ]; then
+	CFG_FOLDERS=$DARWIN_FILES
+    elif [ $SYSTEM == "Linux" ]; then
+    	CFG_FOLDERS=$LINUX_FILES
+    fi
+
+    for FOLDER in $CFG_FOLDERS; do
         echo "[+] $FOLDER"
-        stow --restow $FOLDER -d $SYSTEM -t $HOME
+        echo stow $FOLDER -d $FILES_FOLDER -t $HOME
+        stow --restow $FOLDER -d $FILES_FOLDER -t $HOME
     done
+
 else
-    echo "It seems that is no configuration for your $HOSTNAME system."
+    echo "Files folder not found... Like, what the fuck?"
 fi

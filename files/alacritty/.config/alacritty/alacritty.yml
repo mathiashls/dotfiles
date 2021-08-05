@@ -8,4 +8,5 @@ font:
   italic:
     family: Hack
     style: Italic
-  size: 7
+  size: 9.5
+  style: Underline

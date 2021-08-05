@@ -1,4 +1,2 @@
-Linux/nvim/.config/nvim/plugged/*
-Linux/nvim/.config/nvim/.netrwhist
-Darwin/nvim/.config/nvim/plugged/*
-Darwin/nvim/.config/nvim/.netrwhist
+files/nvim/.config/nvim/plugged/*
+files/nvim/.config/nvim/.netrwhist

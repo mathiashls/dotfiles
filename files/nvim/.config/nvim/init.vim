@@ -9,32 +9,45 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+
     " Useful shit
     Plug 'mhinz/vim-startify'
     Plug 'airblade/vim-gitgutter'
     Plug 'scrooloose/nerdcommenter'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+
     " Fancy shit
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'chriskempson/base16-vim'
-    Plug 'lifepillar/vim-solarized8' "theme solarized8 https://github.com/lifepillar/vim-solarized8.git
+
     " Coding shit
-    Plug 'sbdchd/neoformat'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-    Plug 'junegunn/fzf.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'yggdroot/indentline'
     Plug 'dense-analysis/ale'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-commentary'
+
+    " React / JS Stuff
+    Plug 'pangloss/vim-javascript'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    Plug 'jparise/vim-graphql'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin indent on
 
-" Deoplete Settings
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#source#jedi#show_docstrings = 1
-autocmd CompleteDone * pclose
+" JS CoC
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
+
+" JavaScript and TypeScript Performance Enhancement
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " vim like arrows
 nnoremap <C-h> <C-w>h
@@ -52,7 +65,7 @@ nmap <Leader>ha <Plug>(GitGutterStageHunk)
 nmap <Leader>hu <Plug>(GitGutterUndoHunk)
 nmap <Leader>hv <Plug>(GitGutterPreviewHunk)
 nmap <Leader>hn <Plug>(GitGutterNextHunk)
-nmap <Leader>hp <Plug>(GitGutterPrevtHunk)
+nmap <Leader>hp <Plug>(GitGutterPrevHunk)
 
 " fzf keys
 nmap <leader>ff :Files<CR>
@@ -73,15 +86,12 @@ set noswapfile
 
 " Color
 let base16colorspace=256
-colorscheme solarized8
+colorscheme base16-gruvbox-dark-soft
 
 " Airline stuff
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
-
-" tmux powerline
-let g:tmuxline_powerline_separators = 0
 
 " fzf config
 let g:fzf_action = {

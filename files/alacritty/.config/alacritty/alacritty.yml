@@ -10,3 +10,6 @@ font:
     style: Italic
   size: 9.5
   style: Underline
+
+key_bindings:
+  - { key: Space, mods: Control, chars: "\x00" }

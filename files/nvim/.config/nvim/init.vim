@@ -35,15 +35,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'peitalin/vim-jsx-typescript'
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     Plug 'jparise/vim-graphql'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin indent on
-
-" JS CoC
-let g:coc_global_extensions = [
-  \ 'coc-tsserver'
-  \ ]
 
 " JavaScript and TypeScript Performance Enhancement
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

@@ -8,7 +8,7 @@ font:
   italic:
     family: Hack
     style: Italic
-  size: 9.5
+  size: 7.5
   style: Underline
 
 key_bindings:

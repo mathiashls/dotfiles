@@ -34,7 +34,7 @@ bindsym $mod+Shift+x exec "betterlockscreen -l"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id WINIT_X11_SCALE_FACTOR=1 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

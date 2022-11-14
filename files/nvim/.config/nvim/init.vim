@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'scrooloose/nerdcommenter'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'ggandor/leap.nvim'
 
     " Fancy shit
     Plug 'vim-airline/vim-airline'
@@ -48,6 +49,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" leap config
+lua require('leap').add_default_mappings()
 
 "  fugitive keys
 noremap <leader>gs :Gstatus<CR>

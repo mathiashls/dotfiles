@@ -37,3 +37,6 @@ export UCI_PATH="/Users/mathiashls/byne/config"
 alias byne="cd ~/byne"
 alias work='cd $HOME/byne/code'
 alias pa='cd $HOME/byne/code/paleale-server'
+
+# Useful shit for lazy people like me
+alias used-ports="netstat -tulpn"

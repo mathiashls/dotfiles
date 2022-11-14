@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if command -v rofi > /dev/null; then
+    exec rofi -show combi -combi-modi 'drun,run' -modi combi -font 'Hack 8'
+else
+    exec dmenu_run
+fi

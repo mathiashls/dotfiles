@@ -39,6 +39,12 @@ bindsym $mod+Return exec --no-startup-id WINIT_X11_SCALE_FACTOR=1 alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Calculator
+bindsym $mod+c exec calc
+
+# start dmenu (a program launcher)
+bindsym $mod+space exec run
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -88,7 +94,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent

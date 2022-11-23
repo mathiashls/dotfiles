@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DARWIN_FILES="nvim tmux zsh alacritty"
-LINUX_FILES="nvim tmux zsh alacritty i3 xinitrc"
+LINUX_FILES="nvim tmux zsh alacritty i3 xinitrc rofi"
 
 SYSTEM=$(uname)
 FILES_FOLDER="files"

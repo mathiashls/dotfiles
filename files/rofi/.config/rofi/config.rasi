@@ -1,0 +1,6 @@
+configuration {
+    display-combi: "Run";
+    font: "hack 8";
+}
+
+@theme "gruvbox-dark"

@@ -4,6 +4,8 @@ Mathias Hillesheim's dotfiles.
 
 Just run `./setup`.
 
+*WARNING*: Mac compatibility is deprecated
+
 
 ## Requirements:
 
@@ -12,6 +14,7 @@ Just run `./setup`.
 * stow: Pacman/Homebrew
 * tmux: Pacman/Homebrew
 * neovim: Pacman/Homebrew
+* rofi / rofi-calc: Pacman
 * Oh My Zsh: https://github.com/robbyrussell/oh-my-zsh
 * vim-plug: https://github.com/junegunn/vim-plug
 * Tmux Plugin Manager: https://github.com/tmux-plugins/tpm

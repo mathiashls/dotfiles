@@ -84,7 +84,7 @@ set noswapfile
 
 " Color
 let base16colorspace=256
-colorscheme base16-gruvbox-dark-soft
+colorscheme base16-gruvbox-dark-hard
 
 " Airline stuff
 set laststatus=2

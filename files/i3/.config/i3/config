@@ -86,7 +86,6 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -114,6 +113,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 bindsym $mod+m workspace minecraft fodac kkj
+bindsym $mod+s workspace steam
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -127,6 +127,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+m move container to workspace minecraft fodac kkj
+bindsym $mod+Shift+s move container to workspace steam
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -181,8 +182,8 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym Control+7 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Mac like screenshot binds
-bindsym Control+Shift+3 exec scrot
-bindsym --release Control+Shift+4 exec scrot -s
+bindsym Mod1+Shift+3 exec scrot
+bindsym --release Mod1+Shift+4 exec scrot -s
 
 bindsym $mod+r mode "resize"
 

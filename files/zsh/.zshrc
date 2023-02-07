@@ -32,8 +32,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/opt/node@14/bin:$PATH"
 
 # BYNE shit
-export ROOTDATA_DIR="/Users/mathiashls/byne/overlay"
-export UCI_PATH="/Users/mathiashls/byne/config"
+export ROOTDATA_DIR="$HOME/byne/overlay"
+export UCI_PATH="$HOME/byne/config"
 alias byne="cd ~/byne"
 alias work='cd $HOME/byne/code'
 alias pa='cd $HOME/byne/code/paleale-server'

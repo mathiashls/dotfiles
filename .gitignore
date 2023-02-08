@@ -1,2 +1,3 @@
-files/nvim/.config/nvim/plugged/*
-files/nvim/.config/nvim/.netrwhist
+*
+!.config
+!bin/

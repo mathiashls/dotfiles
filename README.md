@@ -2,7 +2,12 @@
 
 Mathias Hillesheim's dotfiles.
 
-Just run `./setup`.
+In your $HOME/, do:
+```
+git init
+git remote add origin git@github.com:mathiashls/dotfiles.git
+git pull origin master
+```
 
 *WARNING*: Mac compatibility is deprecated
 

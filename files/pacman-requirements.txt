@@ -1,7 +1,0 @@
-zsh
-stow
-tmux
-neovim
-pulseaudio
-pavucontrol
-ttf-hack

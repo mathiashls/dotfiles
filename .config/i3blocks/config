@@ -13,6 +13,12 @@ command=~/.config/i3blocks/cpu/cpu_info.sh
 interval=repeat
 color=#00B4EB
 
+[GPU]
+full_text= GPU @ +00.0°C 
+command=~/.config/i3blocks/gpu/gpu_info.sh
+interval=repeat
+color=#cf324e
+
 [MEM]
 command=free -h | awk '/Mem:/ { printf(" 🐏 %5s/%s \n", $3, $2) }'
 interval=1

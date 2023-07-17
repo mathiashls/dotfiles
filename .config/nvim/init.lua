@@ -1,5 +1,6 @@
 require('plugins')
 require('settings')
 require('mappings')
---require('autocompletion')
---require('lsp-config')
+require('config/treesitter')
+require('config/cmp')
+require('config/lsp')

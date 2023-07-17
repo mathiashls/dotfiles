@@ -45,7 +45,7 @@ vim.opt.number = true
 vim.opt.syntax = 'on'
 vim.opt.background = 'dark'
 vim.g.base16colorspace = 256
-vim.cmd('colorscheme base16-gruvbox-dark-hard')
+vim.cmd('colorscheme base16-ashes')
 
 -- airline
 vim.g.airline_powerline_fonts = 1

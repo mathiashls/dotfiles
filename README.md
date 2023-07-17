@@ -12,15 +12,25 @@ git pull origin master
 *WARNING*: Mac compatibility is deprecated
 
 
-## Requirements:
+## Packages
+Yes, Mathias from the future, I know you love me for this. Just go ahead and
+install all this packages you need in your life.
 
-* Alacritty: https://github.com/alacritty/alacritty
-* zsh: Pacman/Homebrew
-* stow: Pacman/Homebrew
-* tmux: Pacman/Homebrew
-* neovim: Pacman/Homebrew
-* rofi / rofi-calc: Pacman
-* Oh My Zsh: https://github.com/robbyrussell/oh-my-zsh
-* vim-plug: https://github.com/junegunn/vim-plug
-* Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
-* base16_shell: https://github.com/chriskempson/base16-shell
+### Pacman
+    * Alacritty
+    * zsh
+    * stow
+    * tmux
+    * neovim
+    * rofi
+    * rofi-calc
+    * sysstat
+    * acpi
+    * mpstat
+    * pamixer
+    * ttf-hack
+### Third-party repos
+    * Oh My Zsh: https://github.com/robbyrussell/oh-my-zsh
+    * vim-plug: https://github.com/junegunn/vim-plug
+    * Tmux Plugin Manager: https://github.com/tmux-plugins/tpm
+    * base16_shell: https://github.com/chriskempson/base16-shell
